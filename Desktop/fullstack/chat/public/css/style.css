@@ -1,0 +1,110 @@
+h1{
+    text-align: center;
+    color: green;
+}
+body{
+    background-color: black;
+    color: rgb(0, 0, 0);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:15rem;
+    width: 30%;
+    justify-content: space-between;
+    margin: 2rem;
+    border-radius: 20px;
+    background-color: rgb(41, 63, 55);
+}
+.users{
+    border-bottom: 1px solid rgb(255, 254, 254);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+}
+.sender{
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+}
+.reciever{
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+.messa{
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+    color: blueviolet;
+}
+.butn{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+button{
+    width: 20%;
+    border-radius: 20%;
+}
+.edit{
+    background-color: rgb(142, 200, 85);
+    color: rgb(3, 75, 138);
+}
+.del{
+    background-color: #d13838;
+    color: aliceblue;
+    width: 100%;
+    cursor:grab;
+}
+.new{
+    width: 10%;
+    background-color: rgb(66, 66, 216);
+    color: aliceblue;
+}
+.new a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 20rem;
+    align-items: center;
+    margin: 5rem;
+    justify-content: space-around;
+    background-color: rgb(17, 28, 24);
+    border-radius: 5%;
+}
+.sen , .rec{
+    width: 100%;
+}
+.sen input{
+    width: 98%;
+    border-radius: 20px;
+}
+.rec input{
+    width: 98%;
+    border-radius: 20px;
+}
+input[type="text"]::placeholder{
+    text-align: center;
+    color: black;
+}
+.tex{
+    width: 100%;
+}
+.tex textarea{
+    width: 98%;
+    border-radius: 5px;
+}
+.send{
+    width: 100%;
+    background-color: greenyellow;
+    color: black;
+}

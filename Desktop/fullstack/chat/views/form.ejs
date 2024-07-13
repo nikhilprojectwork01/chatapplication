@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>new Chat</h1>
+    <hr/>
+    <form method="post" action="/chat/new">
+       <div class="hero">
+        <div class="sen">
+            <input type="text" placeholder="enter sender name" name="sender" />
+        </div>
+        <div class="rec">
+            <input type="text" placeholder="enter reciever name" name="reciever" />
+
+        </div>
+        <div class="tex">
+            <textarea placeholder="enter message" name="message" rows="10" cols="30">
+</textarea>
+        </div>
+        <button class="send">Send</button>
+       </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>new Chat</h1>
+    <hr/>
+    <form method="post" action="/chat/new/edit/<%=data[0].id%>?_method=PATCH">
+       <div class="hero">
+        <div class="sen">
+            <input type="text" placeholder="<%=data[0].sender%>" name="sender"/>
+        </div>
+        <div class="rec">
+            <input type="text" placeholder="<%=data[0].reciever%>" name="reciever"/>
+
+        </div>
+        <div class="tex">
+            <textarea placeholder="enter message" name="newmessage" rows="10" cols="30">
+                <%=data[0].message%>
+</textarea>
+        </div>
+        <button class="send">Edit</button>
+       </div>
+    </form>
+</body>
+</html>

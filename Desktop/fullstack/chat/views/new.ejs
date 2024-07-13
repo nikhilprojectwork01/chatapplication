@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <h1>Chat App</h1>
+    <button class="new"><a href="/chat/new">New chat</a></button>
+    <hr />
+    <%for(data of datas){%>
+        <div class="main">
+            <div class="users">
+                <div class="sender">
+                    Sender: <%=data.sender%>
+                </div>
+                <div class="reciever">
+                    Rec:<%=data.reciever%>
+                </div>
+            </div>
+            <div class="messa">
+                <%=data.message%>
+            </div>
+            <div class="butn">
+                <button class="edit"><a href="/chat/edit/<%=data.id%>">Edit</a></button>
+              <form action="/chat/<%=data.id%>/remove?_method=DELETE" method="post">
+                <button class="del">Delete</button>
+              </form>
+            </div>
+        </div>
+        <%}%>
+</body>
+
+</html>
